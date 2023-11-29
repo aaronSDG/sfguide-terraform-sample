@@ -7,14 +7,9 @@ terraform {
   }
 }
 
-provider "snowflake"{ 
-      alias = "sys_admin" 
-      role = "SYSADMIN" 
-      region = "AWS_CA_CENTRAL_1" 
-      account = "YF65955" 
-      private_key_path = "./snowflake_tf_snow_key.p8" 
-      username = "tf-snow" 
-} 
+provider "snowflake" {
+  role = "SYSADMIN"
+}
 
 resource "snowflake_database" "db" {
   name = "TF_DEMO"
