@@ -8,7 +8,6 @@ terraform {
 }
 
 provider "snowflake" {
-  password   = "aaronCastro9578"
   role = "SYSADMIN"
   account    = "https://yf65955.ca-central-1.aws.snowflakecomputing.com"
   warehouse  = "COMPUTE_WH"
