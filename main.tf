@@ -8,7 +8,6 @@ terraform {
 }
 
 provider "snowflake" {
-  username   = "AARON"
   password   = "aaronCastro9578"
   role = "SYSADMIN"
   account    = "https://yf65955.ca-central-1.aws.snowflakecomputing.com"
@@ -21,6 +20,6 @@ resource "snowflake_database" "db" {
 
 resource "snowflake_warehouse" "warehouse" {
   name           = "TF_DEMO"
-  warehouse_size = "large"
+  warehouse_size = "xsmall"
   auto_suspend   = 60
 }
